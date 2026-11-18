@@ -2,7 +2,7 @@
 
 **Instructions:** Work in small groups to complete the following exercises. Try sketching out your work on the whiteboards or scratch paper. Everyone should submit their own answers to the exercises, but you are encouraged to discuss your reasoning with your group members.
 
-Name(s): ___________________________
+Name(s): Lynsey Arthur
 
 ---
 
@@ -30,12 +30,15 @@ Procedure Mystery(A, n)
 ### Part A: The Recurrence Relation
 Let $T(n)$ be the running time of `Mystery` on an input of size $n$. Write down a recurrence relation for the worst-case running time $T(n)$. You may assume $n$ is a power of 3 for simplicity. *(Note: You do not need to solve the recurrence relation yet, just formulate it).*
 
+> $T(n) = T(n/3) * T(2n/3) + \mathcal0(n)$
+
 ### Part B: Visualizing Algorithm Behavior
 Without solving the recurrence, look closely at the recursive calls and the combine step. If you were to draw the recursion tree for this algorithm, what would it look like? Is the tree balanced or skewed? 
 
+> Skewed, because the $T(n/3)$ will hit base case before the $T(n/3)$
 ---
 
-## Exercise 2: Unrolling the Recursion Tree
+## Exercise 2: Unrolling the Recursion Treerecurrence relation
 
 Suppose you have developed a new divide-and-conquer algorithm. You analyze your pseudocode and determine that its worst-case running time $T(n)$ satisfies the following recurrence relation:
 
@@ -54,12 +57,14 @@ Analyze the running time of the algorithm by unrolling the recursion tree. Speci
 
 **Bonus!** Find a general formula for the total work done at level $i$ of the recursion tree.
 
+> 1. n
+> 2. n
+> 3. 0(n log n)
 ---
 
 ## Exercise 3: Reflection
 
 1. During lecture last week, we looked at two different divide-and-conquer algorithms. What were these algorithms and what problems did they solve?
-
 
 
 
