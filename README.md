@@ -66,7 +66,9 @@ Analyze the running time of the algorithm by unrolling the recursion tree. Speci
 
 1. During lecture last week, we looked at two different divide-and-conquer algorithms. What were these algorithms and what problems did they solve?
 
-
+> The two algorithms that we looked at were merge sort and binary search. Both of these algorithms divide arrays into smaller components till you hit the base case, and then either sort(for merge sort) or check (for binary search) before slowly building them back up with the correct order or to lower the things needed to check to speed up the process. 
 
 
 2. How do the algorithms you analyzed in this lab compare to the ones we discussed in lecture? Specifically, each algorithm differs from the two we discussed in lecture in one important way. For each of the algorithms above, what is that difference?
+
+> These algorithms could be split into three where merge sort and binary typically split into twos.
